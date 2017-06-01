@@ -1,14 +1,14 @@
 # SGR-Ticketing-app
 
-Requirements
+##Requirements
 
-iOS 10.0+
-Xcode 8
+- iOS 10.0+
+- Xcode 8
 
-Installation
+##Installation
 
 Just add the Source folder to your project.
 
-or use CocoaPods with Podfile:
+or use [CocoaPods](https://cococapods.org) with Podfile:
 
 
