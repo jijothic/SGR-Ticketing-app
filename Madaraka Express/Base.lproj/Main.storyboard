@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Madaraka_Express" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -21,6 +22,86 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-113" y="142"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="caf-l9-Qxh">
+            <objects>
+                <viewController id="5ce-D0-kvd" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="S9Q-5y-GKk"/>
+                        <viewControllerLayoutGuide type="bottom" id="Laq-qg-DNT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aIy-EN-LX8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cdn-Xb-c6U">
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8sL-mu-ELR"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="z1J-Hk-b5a">
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UTE-5j-XGN">
+                                                <string key="text">Hey there!
+Please sign in to Sgr to continue. 😊</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" red="0.71764705880000002" green="0.70196078429999997" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="UTE-5j-XGN" firstAttribute="centerX" secondItem="z1J-Hk-b5a" secondAttribute="centerX" id="fux-qi-wXQ"/>
+                                            <constraint firstItem="UTE-5j-XGN" firstAttribute="centerY" secondItem="z1J-Hk-b5a" secondAttribute="centerY" id="rHK-1u-AH9"/>
+                                        </constraints>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CQk-4B-Lj5">
+                                        <frame key="frameInset" minX="20" minY="532" width="337" height="40"/>
+                                        <color key="backgroundColor" red="0.37254901959999998" green="0.66274509800000003" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <inset key="contentEdgeInsets" minX="15" minY="10" maxX="15" maxY="10"/>
+                                        <state key="normal" title="SIGN IN WITH DIGITS">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RUa-Ye-qNS">
+                                        <frame key="frameInset" minX="20" minY="593" width="337" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.37254901959999998" green="0.66274509800000003" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <inset key="contentEdgeInsets" minX="15" minY="10" maxX="0.0" maxY="10"/>
+                                        <state key="normal" title="SIGN IN WITH TWITTER">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.16470588235294117" green="0.18823529411764706" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="z1J-Hk-b5a" firstAttribute="leading" secondItem="cdn-Xb-c6U" secondAttribute="leading" constant="20" id="3h6-Am-onz"/>
+                                    <constraint firstItem="8sL-mu-ELR" firstAttribute="top" secondItem="cdn-Xb-c6U" secondAttribute="top" constant="92" id="4Ws-yH-T8W"/>
+                                    <constraint firstItem="8sL-mu-ELR" firstAttribute="leading" secondItem="cdn-Xb-c6U" secondAttribute="leading" constant="67" id="5z2-u0-Apa"/>
+                                    <constraint firstAttribute="trailing" secondItem="CQk-4B-Lj5" secondAttribute="trailing" constant="20" id="FmE-t9-eUJ"/>
+                                    <constraint firstItem="z1J-Hk-b5a" firstAttribute="top" secondItem="8sL-mu-ELR" secondAttribute="bottom" constant="23" id="J6k-QB-Dsf"/>
+                                    <constraint firstAttribute="bottom" secondItem="CQk-4B-Lj5" secondAttribute="bottom" constant="95" id="VEv-8L-bIJ"/>
+                                    <constraint firstItem="CQk-4B-Lj5" firstAttribute="leading" secondItem="z1J-Hk-b5a" secondAttribute="leading" id="ceT-hv-m0g"/>
+                                    <constraint firstItem="8sL-mu-ELR" firstAttribute="centerX" secondItem="cdn-Xb-c6U" secondAttribute="centerX" id="nIX-md-bLl"/>
+                                    <constraint firstItem="z1J-Hk-b5a" firstAttribute="top" secondItem="cdn-Xb-c6U" secondAttribute="top" constant="243" id="yhC-t3-SSa"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="cdn-Xb-c6U" secondAttribute="trailing" id="BGH-em-H2L"/>
+                            <constraint firstItem="Laq-qg-DNT" firstAttribute="top" secondItem="cdn-Xb-c6U" secondAttribute="bottom" id="FgL-OC-cNj"/>
+                            <constraint firstItem="cdn-Xb-c6U" firstAttribute="top" secondItem="aIy-EN-LX8" secondAttribute="top" id="gBA-DR-Q7a"/>
+                            <constraint firstItem="cdn-Xb-c6U" firstAttribute="leading" secondItem="aIy-EN-LX8" secondAttribute="leading" id="rUm-OI-1t4"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eBT-kc-lZb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="661.60000000000002" y="143.47826086956522"/>
         </scene>
     </scenes>
 </document>
