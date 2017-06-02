@@ -1,0 +1,6 @@
+framework module Pods_Madaraka_ExpressTests {
+  umbrella header "Pods-Madaraka ExpressTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
